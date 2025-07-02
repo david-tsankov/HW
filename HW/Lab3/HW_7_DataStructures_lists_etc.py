@@ -37,12 +37,16 @@
 
 ### Your code here
 
-# numbers=input("Enter numbers separated by spaces: ").split(" ")
-# # start=input("Enter start index: ")
-# # end=input("Enter end index: ")
-# # list=list(int(numbers))
-# # print(list)
+# numbers=input("Please enter numbers separated by spaces: ")
 # print(numbers)
+# start=int(input("Please enter a start index: "))
+# end=int(input("Please enter an end index: "))
+# numbers=list(numbers)
+# # sliced_numbers=numbers[start:end]
+# print(numbers)
+# # print(sliced_numbers)
+
+
 
 ### EXPECTED OUTPUT:
 # Enter numbers separated by spaces: 1 2 3 4 5 6 7 8 9
