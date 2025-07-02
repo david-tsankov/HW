@@ -1,4 +1,7 @@
-# ---------------------------------- Task 1 ---------------------------------- #
+# legend: ✅-got correct output
+#         ❌-couldnt get correct output   
+
+# ---------------------------------- Task 1 ---------------------------------- # ✅
 """ DESCRIPTION:
     Write a program that asks the user to enter three numbers: start, stop, and step.
     Create a range object using these values and convert it to a list named 'numbers'.
@@ -23,7 +26,7 @@
 # Enter step: 2
 # Generated list: [2, 4, 6, 8]
 
-# ---------------------------------- Task 2 ---------------------------------- #
+# ---------------------------------- Task 2 ---------------------------------- # ❌
 """ DESCRIPTION:
     Write a program that asks the user to enter a list of numbers separated by spaces.
     Then, ask for two indices 'start' and 'end' to slice the list.
@@ -34,7 +37,12 @@
 
 ### Your code here
 
-
+# numbers=input("Enter numbers separated by spaces: ").split(" ")
+# # start=input("Enter start index: ")
+# # end=input("Enter end index: ")
+# # list=list(int(numbers))
+# # print(list)
+# print(numbers)
 
 ### EXPECTED OUTPUT:
 # Enter numbers separated by spaces: 1 2 3 4 5 6 7 8 9
@@ -42,7 +50,7 @@
 # Enter end index: 6
 # Sliced list: [3, 4, 5, 6]
 
-# ---------------------------------- Task 3 ---------------------------------- #
+# ---------------------------------- Task 3 ---------------------------------- # ✅
 """ DESCRIPTION:
     Write a program that generates a list of numbers from 1 to 50 using range().
     Then, create a new list 'evens' that contains only the even numbers from this list using slicing.
@@ -53,11 +61,18 @@
 
 ### Your code here
 
+# numbers=range(1,51)
+# numbers_list=list(numbers)
+# evens=numbers_list[1:51:2]
+# print(numbers_list)
+# print(evens)
+
+
 ### EXPECTED OUTPUT:
 # Original list: [1, 2, 3, ..., 50]
 # Even numbers: [2, 4, 6, ..., 50]
 
-# ---------------------------------- Task 4 ---------------------------------- #
+# ---------------------------------- Task 4 ---------------------------------- #✅
 """ DESCRIPTION:
     Write a program that generates a list of numbers from 100 to 50 (inclusive), counting down by 5.
     Then, create a new list 'first_half' that contains only the first half of this list using slicing.
@@ -66,13 +81,21 @@
         Use slicing to extract the first half.
 """
 
-### Your code here
+### Your code here \\ Comment: list of numbers from 100 to 50 (inclusive) has 11 elements, 
+### so cant be split in half
+
+# numbers=range(100,49,-5)
+# list_numbers=list(numbers)
+# print(list_numbers)
+# first_half=list_numbers[0:6]
+# print(first_half)
+
 
 ### EXPECTED OUTPUT:
 # Original list: [100, 95, 90, ..., 50]
 # First half: [100, 95, 90, ..., 75]
 
-# ---------------------------------- Task 5 ---------------------------------- #
+# ---------------------------------- Task 5 ---------------------------------- #✅
 """ DESCRIPTION:
     Write a program that asks the user to enter a word.
     Create a new string 'reversed_word' that contains the word in reverse order using slicing.
@@ -82,11 +105,15 @@
 
 ### Your code here
 
+# word=input("Please enter a word: ")
+# word_reverse=word[-1::-1]
+# print(word_reverse)
+
 ### EXPECTED OUTPUT:
 # Enter a word: Python
 # Reversed word: nohtyP
 
-# ---------------------------------- Task 6 ---------------------------------- #
+# ---------------------------------- Task 6 ---------------------------------- #✅
 """ DESCRIPTION:
     Write a program that generates a list of numbers from 10 to 100 with a step of 10.
     Then, create a new list 'middle_part' containing all elements except the first and last two using slicing.
@@ -97,11 +124,22 @@
 
 ### Your code here
 
+# numbers=range(10,101,10)
+# numbers_list=list(numbers)
+# print(numbers_list)
+# #print(len(numbers_list))
+# middle=numbers_list[1:8]
+# print(middle)
+
+
 ### EXPECTED OUTPUT:
 # Original list: [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 # Middle part: [30, 40, 50, 60, 70, 80]
 
-# ---------------------------------- Task 7 ---------------------------------- #
+# ---------------------------------- Task 7 ---------------------------------- # ❌
+###Comment: Description says to contain every second char, but expected output removes every second char. 
+### Will follow expected output
+
 """ DESCRIPTION:
     Write a program that asks the user to enter a sentence.
     Create a new string 'every_second_char' that contains every second character from the sentence using slicing.
@@ -111,11 +149,17 @@
 
 ### Your code here
 
+# sentence=input("Please enter a sentence: ")
+# sentence_list=list(sentence)
+# snec_it=sentence_list[0::2]
+# print(snec_it)
+
+
 ### EXPECTED OUTPUT:
 # Enter a sentence: Python slicing is powerful!
 # Every second character: Pto lcn spwru!
 
-# ---------------------------------- Task 8 ---------------------------------- #
+# ---------------------------------- Task 8 ---------------------------------- #✅
 """ DESCRIPTION:
     Write a program which will ask the user to enter 3 names.
 	The names, should be stored into a list 'names'.
@@ -126,6 +170,14 @@
 
 ### Your code here
 
+# name1=input("Please enter 1st name: ")
+# name2=input("Please enter 2d name: ")
+# name3=input("Please enter 3d name: ")
+# names=[name1, name2, name3]
+# print(names)
+# names.sort()
+# print(names)
+
 ### EXPECTED OUTPUT:
 # Enter 1st name: Maria
 # Enter 2d name: Ivan
@@ -134,7 +186,7 @@
 # Originally entered names:  ['Maria', 'Ivan', 'Asen']
 # Sorted names: ['Asen', 'Ivan', 'Maria']
 
-# ---------------------------------- Task 9 ---------------------------------- #
+# ---------------------------------- Task 9 ---------------------------------- #✅
 """ DESCRIPTION:
     Write a program that asks the user to enter a word and then checks if the word is a palindrome.
     A palindrome is a word that reads the same forward and backward, ignoring case.
@@ -143,6 +195,16 @@
 """
 
 ### Your code here
+
+# word=input("Pleas enter a word: ")
+# word_backup=word
+# word=word.lower()
+# drow=word[-1::-1]
+# if word==drow:
+#     print(f'The word {word_backup} is a palindrome')
+# else:
+#     print(f'The word {word_backup} is not a palindrome')
+
 
 ### EXPECTED OUTPUT:
 # Enter a word : Racecar
