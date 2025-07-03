@@ -38,14 +38,10 @@
 ### Your code here
 
 # numbers=input("Please enter numbers separated by spaces: ")
-# print(numbers)
-# start=int(input("Please enter a start index: "))
-# end=int(input("Please enter an end index: "))
-# numbers=list(numbers)
-# # sliced_numbers=numbers[start:end]
-# print(numbers)
-# # print(sliced_numbers)
-
+# start=int(input("Please enter start index: "))
+# end=int(input("Please enter end index: "))
+# numbers_sliced=numbers[start:end:2]
+# print(list(numbers_sliced))
 
 
 ### EXPECTED OUTPUT:
@@ -140,7 +136,7 @@
 # Original list: [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 # Middle part: [30, 40, 50, 60, 70, 80]
 
-# ---------------------------------- Task 7 ---------------------------------- # ❌
+# ---------------------------------- Task 7 ---------------------------------- # ✅
 ###Comment: Description says to contain every second char, but expected output removes every second char. 
 ### Will follow expected output
 
@@ -154,9 +150,8 @@
 ### Your code here
 
 # sentence=input("Please enter a sentence: ")
-# sentence_list=list(sentence)
-# snec_it=sentence_list[0::2]
-# print(snec_it)
+# snec=sentence[0::2]
+# print(snec)
 
 
 ### EXPECTED OUTPUT:
