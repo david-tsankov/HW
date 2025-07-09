@@ -40,7 +40,8 @@
 # numbers=input("Please enter numbers separated by spaces: ")
 # start=int(input("Please enter start index: "))
 # end=int(input("Please enter end index: "))
-# numbers_sliced=numbers[start:end:2]
+# numbers_list=numbers.split(" ")
+# numbers_sliced=numbers_list[start:end]
 # print(list(numbers_sliced))
 
 
