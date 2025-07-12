@@ -10,6 +10,13 @@ Print the data as shown:
 """
 ### YOUR CODE HERE
 
+data={
+    "name" : "Ivan",
+    "age" : 30,
+    "city" : "Sofia"
+}
+print(data)
+
 
 ### EXPECTED OUTPUT:
 # name      : Ivan
