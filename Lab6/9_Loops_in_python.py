@@ -67,16 +67,16 @@ words = ["hello", "world", "python", "is", "fun", "and", "useful"]
 dict={
 
 }
+index=0
 for i in words:
-    lenght=len(i)
-    dict[lenght]=i
 
+    
 
 ### EXPECTED OUTPUT:
 # {5: ['hello', 'world'], 6: ['python'], 2: ['is'], 3: ['fun', 'and'], 7: ['useful']}
 
 
-# ---------------------------------- Task 4 ---------------------------------- #
+# ---------------------------------- Task 4 ---------------------------------- #✅
 """ DESCRIPTION:
     In a supermarket inventory system, there are two sets of product categories:
     1. Categories that need refrigeration.
@@ -95,6 +95,13 @@ for i in words:
 # sale = {'cereals', 'dairy', 'snacks', 'frozen foods', 'beverages'}
 
 ### Your code here
+
+# refrigerated_and_sale=refrigerated & sale
+# refrigerated_not_needed=sale-refrigerated
+# new_items_not_on_sale=refrigerated-sale
+# list=[refrigerated_and_sale, refrigerated_not_needed, new_items_not_on_sale]
+# for i in list:
+#     print(i)
 
 ### EXPECTED OUTPUT:
 # Categories both refrigerated and on sale: {'dairy', 'frozen foods'}
