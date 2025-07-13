@@ -60,35 +60,41 @@
 """
 
 ### Given:
-words = ["hello", "world", "python", "is", "fun", "and", "useful"]
+words = ["hello", "world", "python", "is", "fun", "and", "usefull"]
 
 ### Your code here
 
-dict={
+# dict={
 
-}
-index=0
-for i in words:
+# }
+# index=0
+# for i in range(0,7):
+#     dict[len(words[i])]=""
+# print(dict)
+
+# for key,value in dict:
+#     value.append()
+# print(dict)
 
     
 
 ### EXPECTED OUTPUT:
-# {5: ['hello', 'world'], 6: ['python'], 2: ['is'], 3: ['fun', 'and'], 7: ['useful']}
+# {5: ['hello', 'world'], 6: ['python'], 2: ['is'], 3: ['fun', 'and'], 7: ['usefull']}
 
 
 # ---------------------------------- Task 4 ---------------------------------- #✅
-""" DESCRIPTION:
-    In a supermarket inventory system, there are two sets of product categories:
-    1. Categories that need refrigeration.
-    2. Categories on sale this week.
+# """ DESCRIPTION:
+#     In a supermarket inventory system, there are two sets of product categories:
+#     1. Categories that need refrigeration.
+#     2. Categories on sale this week.
 
-    Write a script, which performs the following tasks:
-    a. Find and print the categories that are both refrigerated and on sale.
-    b. Find and print categories that are on sale but do not require refrigeration.
-    c. Suggest new sale categories from the refrigerated items which are not yet on sale.
+#     Write a script, which performs the following tasks:
+#     a. Find and print the categories that are both refrigerated and on sale.
+#     b. Find and print categories that are on sale but do not require refrigeration.
+#     c. Suggest new sale categories from the refrigerated items which are not yet on sale.
 
-    Note: The category names are assumed to be in lowercase.
-"""
+#     Note: The category names are assumed to be in lowercase.
+# """
 
 ### Given
 # refrigerated = {'dairy', 'meats', 'frozen foods', 'seafood', 'deli'}
