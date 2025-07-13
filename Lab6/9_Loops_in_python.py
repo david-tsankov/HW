@@ -60,9 +60,17 @@
 """
 
 ### Given:
-# words = ["hello", "world", "python", "is", "fun", "and", "useful"]
+words = ["hello", "world", "python", "is", "fun", "and", "useful"]
 
 ### Your code here
+
+dict={
+
+}
+for i in words:
+    lenght=len(i)
+    dict[lenght]=i
+
 
 ### EXPECTED OUTPUT:
 # {5: ['hello', 'world'], 6: ['python'], 2: ['is'], 3: ['fun', 'and'], 7: ['useful']}
