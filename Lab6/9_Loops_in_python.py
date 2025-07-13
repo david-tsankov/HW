@@ -21,7 +21,7 @@
 # ****
 
 
-# ---------------------------------- Task 2 ---------------------------------- #
+# ---------------------------------- Task 2 ---------------------------------- #✅
 """ DESCRIPTION:
     Write a script that prompts the user to enter words, one at a time.
     The user should continue to enter words until they enter '0'.
@@ -29,6 +29,21 @@
 """
 
 ### Your code
+
+
+# list=[]
+# word=""
+# while word!="0":
+#     word=input("Enter a word: ")
+#     list.append(word)
+# index=0
+
+# list_vowels=[]
+# for i in list:
+#     if i[0] in ["a", "e", "i", "o", "u"]:
+#         list_vowels.append(i)
+# print(f"List of words which start with a vowel: {list_vowels}")
+
 
 ### EXPECTED OUTPUT:
 # Enter a word (or '0' to stop): atom
@@ -45,7 +60,7 @@
 """
 
 ### Given:
-words = ["hello", "world", "python", "is", "fun", "and", "useful"]
+# words = ["hello", "world", "python", "is", "fun", "and", "useful"]
 
 ### Your code here
 
@@ -68,8 +83,8 @@ words = ["hello", "world", "python", "is", "fun", "and", "useful"]
 """
 
 ### Given
-refrigerated = {'dairy', 'meats', 'frozen foods', 'seafood', 'deli'}
-sale = {'cereals', 'dairy', 'snacks', 'frozen foods', 'beverages'}
+# refrigerated = {'dairy', 'meats', 'frozen foods', 'seafood', 'deli'}
+# sale = {'cereals', 'dairy', 'snacks', 'frozen foods', 'beverages'}
 
 ### Your code here
 
