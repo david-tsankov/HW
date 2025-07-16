@@ -1,4 +1,7 @@
-# ---------------------------------- Task 1 ---------------------------------- #
+# legend: ✅-got correct output
+#         ❌-couldnt get correct output 
+
+# ---------------------------------- Task 1 ---------------------------------- #✅
 """DESCRIPTION:
 Write a function named 'calculate_area' that takes two parameters (length and width)
 and returns the area of a rectangle.
@@ -6,6 +9,11 @@ and returns the area of a rectangle.
 
 
 ### YOUR CODE HERE
+
+# def calculate_area(lenght,width):
+#     area=lenght*width
+#     print(area)
+# calculate_area(10,5)
 
 
 ### TEST:
@@ -15,7 +23,7 @@ and returns the area of a rectangle.
 # 50
 
 
-# ---------------------------------- Task 2 ---------------------------------- #
+# ---------------------------------- Task 2 ---------------------------------- #✅
 """ DESCRIPTION:
 Create a function 'is_even' that takes a single integer argument and returns True
 if the number is even, and False otherwise.
@@ -24,6 +32,12 @@ if the number is even, and False otherwise.
 
 ### YOUR CODE HERE
 
+# def is_even(number):
+#     if number%2==0:
+#         return(True)
+#     else:
+#         return(False)
+# print(is_even(5))
 
 ### TEST:
 # print(is_even(4))
@@ -42,6 +56,14 @@ Write a function named 'multiply_elements' that takes a list of integers and ret
 
 ### YOUR CODE HERE
 
+def multiply_elements(*args):
+    for j in range(0,len(args)+1,2):
+        product=args[j]*1
+print(multiply_elements(1,2,3,4,5))
+
+
+
+multiply_elements(1,2,3,45,6)
 
 ### TEST:
 # print(multiply_elements([2, 3, 4]))
