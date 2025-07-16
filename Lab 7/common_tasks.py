@@ -57,13 +57,10 @@ Write a function named 'multiply_elements' that takes a list of integers and ret
 ### YOUR CODE HERE
 
 def multiply_elements(*args):
-    for j in range(0,len(args)+1,2):
-        product=args[j]*1
-print(multiply_elements(1,2,3,4,5))
-
-
-
-multiply_elements(1,2,3,45,6)
+    for j in range(1,len(args)+1):
+        
+            
+multiply_elements([1,2,3,45,6])
 
 ### TEST:
 # print(multiply_elements([2, 3, 4]))
