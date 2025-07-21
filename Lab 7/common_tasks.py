@@ -71,7 +71,7 @@ Write a function named 'multiply_elements' that takes a list of integers and ret
 # 24
 
 
-# ---------------------------------- Task 4 ---------------------------------- #
+# ---------------------------------- Task 4 ---------------------------------- #✅
 """ DESCRIPTION:
 Create a function 'count_vowels' that takes a string and returns the count of vowels (a, e, i, o, u) in the string.
 """
@@ -79,9 +79,16 @@ Create a function 'count_vowels' that takes a string and returns the count of vo
 
 ### YOUR CODE HERE
 
-def count_vowels():
-    """Only string parameters allowed"""
-    
+# def count_vowels(string):
+#     """Only string parameters allowed"""
+#     string=string.lower()
+#     index=0
+#     for letter in string:
+#         if letter in ["a","i","e","o","u"]:
+#             index=index+1
+#     return index
+
+        
 
 
 ### TEST:
