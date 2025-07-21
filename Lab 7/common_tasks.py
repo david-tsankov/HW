@@ -100,15 +100,17 @@ Create a function 'count_vowels' that takes a string and returns the count of vo
 # 1
 
 
-# ---------------------------------- Task 5 ---------------------------------- #
+# ---------------------------------- Task 5 ---------------------------------- #✅
 """ DESCRIPTION:
 Write a lambda function 'reverse_string' that takes a string and returns the string reversed.
 """
 
 ### YOUR CODE HERE
 
+# reverse_string=lambda string:string[::-1]
+
 ### TEST:
-# print(reverse_string("hello"))
+# print(reverse_string("skib skib"))
 
 ### EXPECTED OUTPUT:
 # "olleh"
