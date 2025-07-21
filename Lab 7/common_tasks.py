@@ -169,6 +169,8 @@ Write a lambda function 'is_palindrome' that checks if a given string is a palin
 
 ### YOUR CODE HERE
 
+# is_palindrome=lambda string: string.lower()==string.lower()[::-1]
+
 ### TEST:
 # print(is_palindrome("madam"))
 # print(is_palindrome("hello"))
