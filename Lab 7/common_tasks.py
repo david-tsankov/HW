@@ -116,17 +116,27 @@ Write a lambda function 'reverse_string' that takes a string and returns the str
 # "olleh"
 
 
-# ---------------------------------- Task 6 ---------------------------------- #
+# ---------------------------------- Task 6 ---------------------------------- #✅
 """ DESCRIPTION:
 Write a function 'find_max' that takes a list of numbers and returns the largest number in the list.
 """
 
 
 ### YOUR CODE HERE
+# import math
+# def find_max(*args):
+#     index=-math.inf
+#     for number in args:
+#         if number>index:
+#             max=number
+#             index=number
+#         else:max=index
+#     return max
+
 
 
 ### TEST:
-# print(find_max([1, 3, 2, 8, 5]))
+# print(find_max(-1, 3, 2, 8, 100000000000))
 
 ### EXPECTED OUTPUT:
 # 8
