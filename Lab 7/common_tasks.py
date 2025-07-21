@@ -142,7 +142,7 @@ Write a function 'find_max' that takes a list of numbers and returns the largest
 # 8
 
 
-# ---------------------------------- Task 7 ---------------------------------- #
+# ---------------------------------- Task 7 ---------------------------------- #✅
 """ DESCRIPTION:
 Create a function 'remove_duplicates' that takes a list and removes duplicate elements, returning a new list with unique elements.
 """
@@ -150,9 +150,13 @@ Create a function 'remove_duplicates' that takes a list and removes duplicate el
 
 ### YOUR CODE HERE
 
+# def remove_duplicates(*args):
+#     args=list(set(args))
+#     return args
+
 
 ### TEST:
-# print(remove_duplicates([1, 2, 2, 3, 4, 3]))
+# print(remove_duplicates(1, 2, 2, 3, 4, 3))
 
 ### EXPECTED OUTPUT:
 # [1, 2, 3, 4]
