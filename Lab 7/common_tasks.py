@@ -162,7 +162,7 @@ Create a function 'remove_duplicates' that takes a list and removes duplicate el
 # [1, 2, 3, 4]
 
 
-# ---------------------------------- Task 8 ---------------------------------- #
+# ---------------------------------- Task 8 ---------------------------------- #✅
 """ DESCRIPTION:
 Write a lambda function 'is_palindrome' that checks if a given string is a palindrome.
 """
@@ -180,15 +180,17 @@ Write a lambda function 'is_palindrome' that checks if a given string is a palin
 # False
 
 
-# ---------------------------------- Task 9 ---------------------------------- #
+# ---------------------------------- Task 9 ---------------------------------- #✅
 """ DESCRIPTION:
 Write a lambda function 'add' that takes two arguments and returns their sum.
 """
 
 ### YOUR CODE HERE
 
+# add=lambda x,y: x+y
+
 ### TEST:
-# print(add(2, 3))
+# print(add(9, 3))
 
 ### EXPECTED OUTPUT:
 # 5
