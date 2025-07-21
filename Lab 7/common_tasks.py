@@ -196,7 +196,7 @@ Write a lambda function 'add' that takes two arguments and returns their sum.
 # 5
 
 
-# ---------------------------------- Task 10 ---------------------------------- #
+# ---------------------------------- Task 10 ---------------------------------- #✅
 """ DESCRIPTION:
 Create a function 'filter_words' that takes a list of words and a minimum length, and
 returns a list of words that are longer than the given minimum length.
@@ -205,9 +205,19 @@ returns a list of words that are longer than the given minimum length.
 
 ### YOUR CODE HERE
 
+# def filter_words(min_lenght=0,*args):
+#     words=[]
+#     for word in args:
+#         if len(word)>min_lenght:
+#             words.append(word)
+#     return words
+
 
 ### TEST:
-# print(filter_words(["apple", "pear", "banana", "cherry"], 5))
+# print(filter_words(["apple", "pear", "banana", "cherry"], 5))---->doesnt work for me, as variable arguments before positional in this
+
+# my test:
+# print(filter_words(5,"apple", "pear", "banana", "cherry"))
 
 ### EXPECTED OUTPUT:
 # ['banana', 'cherry']
