@@ -48,7 +48,9 @@ if the number is even, and False otherwise.
 # False
 
 
-# ---------------------------------- Task 3 ---------------------------------- #
+# ---------------------------------- Task 3 ---------------------------------- #✅
+# note(cant make it take a list, only the normal *args)
+
 """ DESCRIPTION:
 Write a function named 'multiply_elements' that takes a list of integers and returns the product of all the elements in the list.
 """
@@ -56,14 +58,14 @@ Write a function named 'multiply_elements' that takes a list of integers and ret
 
 ### YOUR CODE HERE
 
-def multiply_elements(*args):
-    for j in range(1,len(args)+1):
-        
-            
-multiply_elements([1,2,3,45,6])
+# def multiply_elements(*args):
+#     product=1
+#     for number in args:
+#         product=number*product
+#     return product
 
 ### TEST:
-# print(multiply_elements([2, 3, 4]))
+# print(multiply_elements(1,2,3,4,5,6,7,8,9,10))
 
 ### EXPECTED OUTPUT:
 # 24
@@ -76,6 +78,10 @@ Create a function 'count_vowels' that takes a string and returns the count of vo
 
 
 ### YOUR CODE HERE
+
+def count_vowels():
+    """Only string parameters allowed"""
+    
 
 
 ### TEST:
