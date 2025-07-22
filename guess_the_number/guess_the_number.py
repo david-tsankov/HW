@@ -74,11 +74,13 @@ def gameplay_easy():
         elif guess>number:
             if index==0:
                 print(f"BUahahaha you LOSE!!!")
+                print(f"The number was {number}")
                 break
             print(f"Too high, {index} guesses left!")
         elif guess<number:
             if index==0:
                 print(f"BUahahaha you LOSE!!!")
+                print(f"The number was {number}")
                 break
             print(f"Too low, {index} guesses left!")
         index-=1
@@ -94,11 +96,13 @@ def gameplay_medium():
         elif guess>number:
             if index==0:
                 print(f"BUahahaha you LOSE!!!")
+                print(f"The number was {number}")
                 break
             print(f"Too high, {index} guesses left!")
         elif guess<number:
             if index==0:
                 print(f"BUahahaha you LOSE!!!")
+                print(f"The number was {number}")
                 break
             print(f"Too low, {index} guesses left!")
         index-=1
@@ -114,11 +118,13 @@ def gameplay_hard():
         elif guess>number:
             if index==0:
                 print(f"BUahahaha you LOSE!!!")
+                print(f"The number was {number}")
                 break
             print(f"Too high, {index} guesses left!")
         elif guess<number:
             if index==0:
                 print(f"BUahahaha you LOSE!!!")
+                print(f"The number was {number}")
                 break
             print(f"Too low, {index} guesses left!")
         index-=1
@@ -134,11 +140,13 @@ def gameplay_extreme():
         elif guess>number:
             if index==0:
                 print(f"BUahahaha you LOSE!!!")
+                print(f"The number was {number}")
                 break
             print(f"Too high, {index} guesses left!")
         elif guess<number:
             if index==0:
                 print(f"BUahahaha you LOSE!!!")
+                print(f"The number was {number}")
                 break
             print(f"Too low, {index} guesses left!")
         index-=1
@@ -154,11 +162,13 @@ def gameplay_legit_guessing():
         elif guess>number:
             if index==0:
                 print(f"BUahahaha you LOSE!!!")
+                print(f"The number was {number}")
                 break
             print(f"Too high, {index} guesses left!")
         elif guess<number:
             if index==0:
                 print(f"BUahahaha you LOSE!!!")
+                print(f"The number was {number}")
                 break
             print(f"Too low, {index} guesses left!")
         index-=1
