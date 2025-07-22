@@ -35,7 +35,7 @@ def choose_level():
         "2":"Meadium",
         "3":"Hard",
         "4":"Extreme",
-        "5":"Borderline guessing"
+        "5":"Legit guessing"
     }
     print(f"{50*"$":^50}")
     print(f"${"Choose your level:":^48}$")
@@ -48,6 +48,7 @@ def choose_level():
     print()
     
     level=levels[input("Enter level: ")]
+    return level
 
 
 def generating_random_number_easy_medium():
@@ -162,6 +163,19 @@ def gameplay_legit_guessing():
             print(f"Too low, {index} guesses left!")
         index-=1
 
+def executing_difficulty_based_on_level_chosen():
+    level=choose_level()
+    if level=="Easy":
+        gameplay_easy()
+    elif level=="Medium":
+        gameplay_medium()
+    elif level=="Hard":
+        gameplay_hard()
+    elif level=="Extreme":
+        gameplay_extreme()
+    elif level==("Legit guessing"):
+        gameplay_legit_guessing()
+
 rules()
 choose_level()
-gameplay_legit_guessing()
+executing_difficulty_based_on_level_chosen()
