@@ -85,7 +85,6 @@ def gameplay_easy():
 def gameplay_medium():
     number=generating_random_number_easy_medium()
     index=4
-    print(number)
     for i in range(0,5):
         guess=int(input("Enter guess: "))
         if guess==number:
@@ -106,7 +105,46 @@ def gameplay_medium():
 def gameplay_hard():
     number=generating_random_number_hard_extreme()
     index=8
-    print(number)
+    for i in range(0,9):
+        guess=int(input("Enter guess: "))
+        if guess==number:
+            print(f"Congrats, you guessed right!")
+            break
+        elif guess>number:
+            if index==0:
+                print(f"BUahahaha you LOSE!!!")
+                break
+            print(f"Too high, {index} guesses left!")
+        elif guess<number:
+            if index==0:
+                print(f"BUahahaha you LOSE!!!")
+                break
+            print(f"Too low, {index} guesses left!")
+        index-=1
+
+def gameplay_extreme():
+    number=generating_random_number_hard_extreme()
+    index=6
+    for i in range(0,7):
+        guess=int(input("Enter guess: "))
+        if guess==number:
+            print(f"Congrats, you guessed right!")
+            break
+        elif guess>number:
+            if index==0:
+                print(f"BUahahaha you LOSE!!!")
+                break
+            print(f"Too high, {index} guesses left!")
+        elif guess<number:
+            if index==0:
+                print(f"BUahahaha you LOSE!!!")
+                break
+            print(f"Too low, {index} guesses left!")
+        index-=1
+
+def gameplay_legit_guessing():
+    number=generating_random_number_legit_guessing()
+    index=8
     for i in range(0,9):
         guess=int(input("Enter guess: "))
         if guess==number:
@@ -126,4 +164,4 @@ def gameplay_hard():
 
 rules()
 choose_level()
-gameplay_hard()
+gameplay_legit_guessing()
