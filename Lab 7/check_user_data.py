@@ -1,3 +1,5 @@
+
+    
 def get_user_data():
     """retrieves user data from the command line
 
@@ -13,7 +15,7 @@ def get_user_data():
         
     }
     list_for_loop=["name","height","weight"]
-    
+
     def validate_name():
         if len(user_data["name"])>2:
             return True
@@ -40,9 +42,7 @@ def get_user_data():
             index+=1
         user_data["weight"]=float(user_data["weight"])
         user_data["height"]=float(user_data["height"])
-        validate_height()
-        validate_name()
-        validate_weight()
+        print(user_data)
         if validate_name()==True and validate_height==True and validate_weight==True:
             x=True
         else:

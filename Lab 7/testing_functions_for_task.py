@@ -21,7 +21,13 @@ def validate_weight():
         return True
     else:
         return False
-    
-print(validate_weight())
-print(validate_height())
 print(validate_name())
+print(validate_height())
+print(validate_weight())
+x=False
+while x==False:
+    if validate_name()==True and validate_height()==True and validate_weight()==True:
+        x=True
+    else:
+        x=False
+print(x)
