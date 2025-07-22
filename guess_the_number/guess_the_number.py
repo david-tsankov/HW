@@ -177,5 +177,4 @@ def executing_difficulty_based_on_level_chosen():
         gameplay_legit_guessing()
 
 rules()
-choose_level()
 executing_difficulty_based_on_level_chosen()
