@@ -71,11 +71,59 @@ def gameplay_easy():
             print(f"Congrats, you guessed right!")
             break
         elif guess>number:
+            if index==0:
+                print(f"BUahahaha you LOSE!!!")
+                break
             print(f"Too high, {index} guesses left!")
         elif guess<number:
+            if index==0:
+                print(f"BUahahaha you LOSE!!!")
+                break
+            print(f"Too low, {index} guesses left!")
+        index-=1
+
+def gameplay_medium():
+    number=generating_random_number_easy_medium()
+    index=4
+    print(number)
+    for i in range(0,5):
+        guess=int(input("Enter guess: "))
+        if guess==number:
+            print(f"Congrats, you guessed right!")
+            break
+        elif guess>number:
+            if index==0:
+                print(f"BUahahaha you LOSE!!!")
+                break
+            print(f"Too high, {index} guesses left!")
+        elif guess<number:
+            if index==0:
+                print(f"BUahahaha you LOSE!!!")
+                break
+            print(f"Too low, {index} guesses left!")
+        index-=1
+
+def gameplay_hard():
+    number=generating_random_number_hard_extreme()
+    index=8
+    print(number)
+    for i in range(0,9):
+        guess=int(input("Enter guess: "))
+        if guess==number:
+            print(f"Congrats, you guessed right!")
+            break
+        elif guess>number:
+            if index==0:
+                print(f"BUahahaha you LOSE!!!")
+                break
+            print(f"Too high, {index} guesses left!")
+        elif guess<number:
+            if index==0:
+                print(f"BUahahaha you LOSE!!!")
+                break
             print(f"Too low, {index} guesses left!")
         index-=1
 
 rules()
 choose_level()
-gameplay_easy()
+gameplay_hard()
