@@ -21,29 +21,35 @@ def get_user_data():
             return False
     
     def validate_height():
-        if 50<user_data["height"]<250:
+        if 0.50<user_data["height"]<2.50:
             return True
         else:
             return False
+        
     def validate_weight():
         if 5<user_data["weight"]<300:
             return True
         else:
             return False
 
-
-    while False:
+    x=False
+    while x==False:
         index=0
         for i in range(0,3):
             user_data[list_for_loop[index]]=input(f"Please enter your {list_for_loop[index]}: ")
             index+=1
+        user_data["weight"]=float(user_data["weight"])
+        user_data["height"]=float(user_data["height"])
+        validate_height()
+        validate_name()
+        validate_weight()
         if validate_name()==True and validate_height==True and validate_weight==True:
-            True
+            x=True
         else:
-            False
+            x=False
+        print(x)
     
-    user_data["weight"]=float(user_data["weight"])
-    user_data["height"]=float(user_data["height"])
+   
 
 
     print(user_data)
