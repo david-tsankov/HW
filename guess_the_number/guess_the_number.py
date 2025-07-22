@@ -48,15 +48,34 @@ def choose_level():
     print()
     
     level=levels[input("Enter level: ")]
-    print(level)
 
 
-def generating_random_number():
+def generating_random_number_easy_medium():
     number=random.randint(1,10)
     return number
 
-def guessing_number():
-    pass
+def generating_random_number_hard_extreme():
+    number=random.randint(1,100)
+    return number
+
+def generating_random_number_legit_guessing():
+    number=random.randint(1,1000)
+    return number
+
+def gameplay_easy():
+    number=generating_random_number_easy_medium()
+    index=6
+    for i in range(0,7):
+        guess=int(input("Enter guess: "))
+        if guess==number:
+            print(f"Congrats, you guessed right!")
+            break
+        elif guess>number:
+            print(f"Too high, {index} guesses left!")
+        elif guess<number:
+            print(f"Too low, {index} guesses left!")
+        index-=1
 
 rules()
 choose_level()
+gameplay_easy()
