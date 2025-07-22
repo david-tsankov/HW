@@ -25,13 +25,38 @@ def rules():
     print(f"${"Fixed number of guesses based on level":^48}$")
     print(f"${"Really not that many rules, just have fun!":^48}$")
     print(f"{50*"$":^50}")
+    print()
+    print()
     
 
 def choose_level():
-    levels: [easy, medium, hard, extreme, borderline guessing]
+    levels={
+        "1":"Easy",
+        "2":"Meadium",
+        "3":"Hard",
+        "4":"Extreme",
+        "5":"Borderline guessing"
+    }
+    print(f"{50*"$":^50}")
+    print(f"${"Choose your level:":^48}$")
+    print(f"${"Easy (1,10), max moves: 7 -> 1":^48}$")
+    print(f"${"Medium (1,10), max moves: 5 -> 2":^48}$")
+    print(f"${"Hard (1,100), max moves: 9 -> 3":^48}$")
+    print(f"${"Extreme (1,100), max moves: 7 -> 4":^48}$")
+    print(f"${"Legit guessing (1,1000), max moves: 9 -> 5":^48}$")
+    print(f"{50*"$":^50}")
+    print()
+    
+    level=levels[input("Enter level: ")]
+    print(level)
+
 
 def generating_random_number():
     number=random.randint(1,10)
     return number
 
+def guessing_number():
+    pass
+
 rules()
+choose_level()
