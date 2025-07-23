@@ -66,34 +66,34 @@ Create an instance of the 'Student' class with your own information and demonstr
 
 ### Define the Student class
 
-class Student:
-    def __init__(self, name, student_id, courses=None):
-        self.name=name
-        self.student_id=student_id
-        self.courses=[]
+# class Student:
+#     def __init__(self, name, student_id, courses=None):
+#         self.name=name
+#         self.student_id=student_id
+#         self.courses=[]
 
-    def add_course(self, course):
-        self.courses.append(course)
+#     def add_course(self, course):
+#         self.courses.append(course)
     
-    def remove_course(self, course):
-        self.courses.remove(course)
+#     def remove_course(self, course):
+#         self.courses.remove(course)
     
-    def list_courses(self):
-        print("Courses: ",end="")
-        for i in self.courses:
-            if i==self.courses[-1]:
-                print(i)
-                break
-            print(i, end=",")
+#     def list_courses(self):
+#         print("Courses: ",end="")
+#         for i in self.courses:
+#             if i==self.courses[-1]:
+#                 print(i)
+#                 break
+#             print(i, end=",")
             
 
 
 
 ### TEST
-student1 = Student("Alice", 12345)
-student1.add_course("Math")
-student1.add_course("History")
-student1.list_courses()
+# student1 = Student("Alice", 12345)
+# student1.add_course("Math")
+# student1.add_course("History")
+# student1.list_courses()
 
 ### EXPECTED OUTPUT:
 # Courses: Math,History
@@ -126,6 +126,15 @@ Create instances of the 'Book' class and demonstrate the usage of the 'Library' 
 
 ### Define the Book class
 
+class Book:
+    def __init__(self, title, author, isbn, year):
+        self.title=title
+        self.author=author
+        self.isbn=isbn
+        self.year=year
+    
+    def __str__(self):
+        return f""
 
 ### Define the Library class
 
