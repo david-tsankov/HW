@@ -44,7 +44,7 @@ Create an instance of the 'Car' class with information about a car and demonstra
 # Engine stopped for Toyota Camry 2022
 
 
-# ---------------------------------- Task 2 ---------------------------------- #
+# ---------------------------------- Task 2 ---------------------------------- #✅
 """ DESCRIPTION:
 Create a class called 'Student' to represent a student. The class should have the following attributes and methods:
 
@@ -66,12 +66,34 @@ Create an instance of the 'Student' class with your own information and demonstr
 
 ### Define the Student class
 
+class Student:
+    def __init__(self, name, student_id, courses=None):
+        self.name=name
+        self.student_id=student_id
+        self.courses=[]
+
+    def add_course(self, course):
+        self.courses.append(course)
+    
+    def remove_course(self, course):
+        self.courses.remove(course)
+    
+    def list_courses(self):
+        print("Courses: ",end="")
+        for i in self.courses:
+            if i==self.courses[-1]:
+                print(i)
+                break
+            print(i, end=",")
+            
+
+
 
 ### TEST
-# student1 = Student("Alice", 12345)
-# student1.add_course("Math")
-# student1.add_course("History")
-# student1.list_courses()
+student1 = Student("Alice", 12345)
+student1.add_course("Math")
+student1.add_course("History")
+student1.list_courses()
 
 ### EXPECTED OUTPUT:
 # Courses: Math,History
