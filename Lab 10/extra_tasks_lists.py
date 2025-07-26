@@ -61,11 +61,16 @@ def user_input():
         list2.append(word)
     del list2[-1]
     return list2
-list_comparison=list2
+
+def remove_duplicted():
+    list_no_duplicates=[]
+    for i in list2:
+        if i not in list_no_duplicates:
+            list_no_duplicates.append(i)
+    return list_no_duplicates
+
 user_input()
-del list2[0]
-del list2[1]
-print(list2)
+print(remove_duplicted())
 
 # def remove_duplicates():
 #     index1=1
@@ -80,7 +85,7 @@ print(list2)
 #     return list2
         
 
-user_input()
+# user_input()
 # print(remove_duplicates())
         
         
