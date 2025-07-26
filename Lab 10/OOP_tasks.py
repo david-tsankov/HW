@@ -134,9 +134,20 @@ class Book:
         self.year=year
     
     def __str__(self):
-        return f""
+        return f"Title: {self.title}\nAuthor: {self.author}\nISBN: {self.isbn}\nYear: {self.year}"
 
+
+        
+book1=Book("Shogun", "James Clavell", 8327282828, 1975)
+print(book1)
 ### Define the Library class
+
+class Library:
+    def add_book(book):
+        book=Library()
+    
+    def remove_book():
+        pass
 
 
 ### TEST
