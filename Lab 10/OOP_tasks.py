@@ -143,14 +143,17 @@ book1=Book("Shogun", "James Clavell", 8327282828, 1975)
 ### Define the Library class
 
 class Library:
-    def __init__(self, library=None):
+    def __init__(self):
         self.library={}
     
-    def add_book(self,other):
-        self.library("other")=(other.title,)
+    def add_book(self,book: Book):
+        self.library["book"]=(book.title,book.author,book.isbn,book.year)
+    def __str__(self):
+        return f"{self.library}"
 
 library=Library()
 library.add_book(book1)
+print(library)
     
 
 
