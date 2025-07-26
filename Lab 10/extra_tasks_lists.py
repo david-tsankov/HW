@@ -61,23 +61,27 @@ def user_input():
         list2.append(word)
     del list2[-1]
     return list2
+list_comparison=list2
+user_input()
+del list2[0]
+del list2[1]
+print(list2)
 
+# def remove_duplicates():
+#     index1=1
+#     index2=1
+#     lenght=len(list_comparison)
+#     for i in range(lenght-1):
+#         if list2[0]==list2[index2]:
+#             del list2[index2]
+#         print(index2)
+#         index2+=1
 
-def remove_duplicates():
-    index1=1
-    index2=1
-    lenght=len(list2)
-    for i in range(lenght-1):
-        if list2[0]==list2[index2]:
-            del list2[index2]
-        print(index2)
-        index2+=1
-
-    return list2
+#     return list2
         
 
 user_input()
-print(remove_duplicates())
+# print(remove_duplicates())
         
         
 
