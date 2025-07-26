@@ -1,8 +1,11 @@
+# legend: ✅-got correct output
+#         ❌-couldnt get correct output 
+
 # ---------------------------------------------------------------------------- #
 #                             Задачи върху списъци                             #
 # ---------------------------------------------------------------------------- #
 
-# --------------------------------- Задача 1. -------------------------------- #
+# --------------------------------- Задача 1. -------------------------------- #✅
 # Напишете програма, която чете цели числа въведени от потребителя и ги
 # съхранява в списък. Програма трябва да продължи да чете стойности, докато
 # потребителят не въведе 0. След това тя трябва да покаже всички стойности, въведени от
@@ -12,33 +15,33 @@
 #     изход:1,2,2,3,4,5,6,
 
 # YOUR CODE HERE
-list=[]
-def user_input(x=None):
-    while x!=0:
-        x=int(input("Enter a whole number: "))
-        list.append(x)
-    return list
+# list1=[]
+# def user_input(x=None):
+#     while x!=0:
+#         x=int(input("Enter a whole number: "))
+#         list1.append(x)
+#     return list1
 
 
-def sorting_list():
-    del list[-1]
-    new_list=[]
-    lenght=len(list)
-    for i in range(lenght):
-        index=0
-        current_MIN=list[0]
-        for i in range((len(list))):
-            if current_MIN<list[index]:
-                pass
-            else:
-                current_MIN=list[index]
-            index+=1
-        new_list.append(current_MIN)
-        list.remove(current_MIN)
-    return new_list
+# def sorting_list():
+#     del list1[-1]
+#     new_list=[]
+#     lenght=len(list1)
+#     for i in range(lenght):
+#         index=0
+#         current_MIN=list1[0]
+#         for i in range((len(list1))):
+#             if current_MIN<list1[index]:
+#                 pass
+#             else:
+#                 current_MIN=list1[index]
+#             index+=1
+#         new_list.append(current_MIN)
+#         list1.remove(current_MIN)
+#     return new_list
         
-user_input()
-print(sorting_list())
+# user_input()
+# print(sorting_list())
 
 # --------------------------------- Задача 2. -------------------------------- #
 # Да се създаде програма, която чете думи като вход от клавиатурата, докато
@@ -50,7 +53,23 @@ print(sorting_list())
 #   изход:first; second; third
 
 # YOUR CODE HERE
+def user_input():
+    word=None
+    while word!="":
+        word=input("Please enter a word: ")
+        list2.append(word)
+    del list2[-1]
+    return list2
 
+
+def remove_duplicates():
+    list3=set(list2)
+    return list3
+list2=[]
+user_input()
+print(remove_duplicates())
+        
+        
 
 # --------------------------------- Задача 3. -------------------------------- #
 # Да се създаде програма, която да чете цели числа въведени от потребителя,
