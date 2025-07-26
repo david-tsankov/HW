@@ -99,7 +99,7 @@ Create an instance of the 'Student' class with your own information and demonstr
 # Courses: Math,History
 
 
-# ---------------------------------- Task 3 ---------------------------------- #
+# ---------------------------------- Task 3 ---------------------------------- #✅
 """ DESCRIPTION:
 Create a class called 'Book' to represent a book in a library system. The class should have the following attributes and methods:
 
@@ -126,15 +126,15 @@ Create instances of the 'Book' class and demonstrate the usage of the 'Library' 
 
 ### Define the Book class
 
-class Book:
-    def __init__(self, title, author, isbn, year):
-        self.title=title
-        self.author=author
-        self.isbn=isbn
-        self.year=year
+# class Book:
+#     def __init__(self, title, author, isbn, year):
+#         self.title=title
+#         self.author=author
+#         self.isbn=isbn
+#         self.year=year
     
-    def __str__(self):
-        return f"Title: {self.title}\nAuthor: {self.author}\nISBN: {self.isbn}\nYear: {self.year}"
+#     def __str__(self):
+#         return f"Title: {self.title}\nAuthor: {self.author}\nISBN: {self.isbn}\nYear: {self.year}"
 
 
         
@@ -142,34 +142,34 @@ class Book:
 
 ### Define the Library class
 
-class Library:
-    def __init__(self):
-        self.library={}
+# class Library:
+#     def __init__(self):
+#         self.library={}
     
-    def add_book(self,book: Book):
-        self.library[book]=(book.title,book.author,book.isbn,book.year)
+#     def add_book(self,book: Book):
+#         self.library[book]=(book.title,book.author,book.isbn,book.year)
     
-    def __str__(self):
-        return f"{self.library}"
+#     def __str__(self):
+#         return f"{self.library}"
     
-    def remove_book(self,isbn):
-        for book in self.library:
-            if isbn == self.library[book][2]:
-                del self.library[book]
-                return
-        print("\nNo such book in this library")
+#     def remove_book(self,isbn):
+#         for book in self.library:
+#             if isbn == self.library[book][2]:
+#                 del self.library[book]
+#                 return
+#         print("\nNo such book in this library")
             
-    def list_books(self):
-        for book in self.library:
-            print(book)
-            print(25*"-")
+#     def list_books(self):
+#         for book in self.library:
+#             print(book)
+#             print(25*"-")
 
-    def find_book(self,isbn):
-        for book in self.library:
-            if isbn==self.library[book][2]:
-                print(f"\nBook found!:\n{book}")
-                return
-        print("\nNo such book in this library")
+#     def find_book(self,isbn):
+#         for book in self.library:
+#             if isbn==self.library[book][2]:
+#                 print(f"\nBook found!:\n{book}")
+#                 return
+#         print("\nNo such book in this library")
 
     
 
@@ -179,23 +179,23 @@ class Library:
 
 ### TEST
 
-book1 = Book("To Kill a Mockingbird", "Harper Lee", "987654321", 1960)
-book2 = Book("1984", "George Orwell", "123456789", 1949)
+# book1 = Book("To Kill a Mockingbird", "Harper Lee", "987654321", 1960)
+# book2 = Book("1984", "George Orwell", "123456789", 1949)
 
-library = Library()
-library.add_book(book1)
-library.add_book(book2)
+# library = Library()
+# library.add_book(book1)
+# library.add_book(book2)
 
-print("List of books in the library:\n")
-library.list_books()
+# print("List of books in the library:\n")
+# library.list_books()
 
-# Remove a book
-library.remove_book("2626")
-print("\nList of books after removal:\n")
-library.list_books()
+# # Remove a book
+# library.remove_book("2626")
+# print("\nList of books after removal:\n")
+# library.list_books()
 
-# Find a book
-library.find_book("26262")
+# # Find a book
+# library.find_book("26262")
 
 
 
@@ -225,7 +225,7 @@ library.find_book("26262")
 # Year: 1960
 
 
-# ---------------------------------- Task 4 ---------------------------------- #
+# ---------------------------------- Task 4 ---------------------------------- #✅
 """ DESCRIPTION:
 Create a class called 'BankAccount' to represent a bank account. The class should have the following attributes and methods:
 
@@ -244,6 +244,20 @@ Create an instance of the 'BankAccount' class with your own account information 
 
 
 ### Define the BankAccount class
+
+# class BankAccount:
+#     def __init__(self,account_number,__balance):
+#         self.account_number=account_number
+#         self.__balance=__balance
+
+#     def deposit(self,amount):
+#         self.__balance+=amount
+
+#     def withdraw(self,amount):
+#         self.__balance-=amount
+
+#     def get_balance(self):
+#         return f"The account with account number: {self.account_number} has a balance of: {self.__balance}$"    
 
 
 ### TEST:
