@@ -43,7 +43,7 @@
 # user_input()
 # print(sorting_list())
 
-# --------------------------------- Задача 2. -------------------------------- #
+# --------------------------------- Задача 2. -------------------------------- #✅
 # Да се създаде програма, която чете думи като вход от клавиатурата, докато
 # потребителят не въведе празен ред. След като потребителят въведе празен ред,
 # програмата трябва да изведе всяка дума, въведена от потребителя точно веднъж.
@@ -90,7 +90,7 @@
 # user_input()
 # print(remove_duplicates())
 
-# --------------------------------- Задача 3. -------------------------------- #
+# --------------------------------- Задача 3. -------------------------------- #✅
 # Да се създаде програма, която да чете цели числа въведени от потребителя,
 # докато не бъде въведен празен ред. След като всичките числа са прочетени, програмата
 # трябва да показва всички отрицателни числа, последвани от нули, последвани от всички
@@ -112,7 +112,24 @@ def user_input():
             number=int(number)
             list_numbers.append(number)
     return list_numbers
-print(user_input())
+
+list_numbers=user_input()
+list_sorted_numbers=[]
+
+def sorting_numbers():
+    for number in list_numbers:
+        if number<0:
+            list_sorted_numbers.append(number)
+    for number in list_numbers:
+        if number==0:
+            list_sorted_numbers.append(number)
+    for number in list_numbers:
+        if number>0:
+            list_sorted_numbers.append(number)
+    return list_sorted_numbers
+
+print(sorting_numbers())
+
 
 
 
