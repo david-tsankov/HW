@@ -139,15 +139,22 @@ class Book:
 
         
 book1=Book("Shogun", "James Clavell", 8327282828, 1975)
-print(book1)
+
 ### Define the Library class
 
 class Library:
-    def add_book(book):
-        book=Library()
+    def __init__(self, library=None):
+        self.library={}
     
-    def remove_book():
-        pass
+    def add_book(self,other):
+        self.library("other")=(other.title,)
+
+library=Library()
+library.add_book(book1)
+    
+
+
+    
 
 
 ### TEST
