@@ -275,7 +275,7 @@ Create an instance of the 'BankAccount' class with your own account information 
 # 1300.0
 
 
-# ---------------------------------- Task 5 ---------------------------------- #
+# ---------------------------------- Task 5 ---------------------------------- #✅
 """ DESCRIPTION:
 Create a base class called 'Shape' to represent a geometric shape. The class should have the following attributes and methods:
 
@@ -293,13 +293,39 @@ Demonstrate the usage of the 'Rectangle' and 'Circle' classes by creating instan
 
 
 ### Define the Shape base class
+# from math import pi
+# print(pi)
+# class Shape:
+#     def __init__(self,name):
+#         self.name=name
+
+#     def area(self):
+#         return "Not implemented for common shape"
 
 
 ### Define the Rectangle class inheriting from Shape
 
+# class Rectangle(Shape):
+#     def __init__(self, name, lenght, width):
+#         super().__init__(name)
+#         self.lenght=lenght
+#         self.width=width
+    
+#     def area(self):
+#         area=self.width*self.lenght
+#         return area
+
 
 ### Define the Circle class inheriting from Shape
 
+# class Circle(Shape):
+#     def __init__(self, name, radius):
+#         super().__init__(name)
+#         self.radius=radius
+    
+#     def area(self):
+#         area=pi*self.radius**2
+#         return area
 
 ### TEST:
 # rectangle1 = Rectangle("Rectangle", 5.0, 3.0)
