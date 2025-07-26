@@ -53,6 +53,7 @@
 #   изход:first; second; third
 
 # YOUR CODE HERE
+list2=[]
 def user_input():
     word=None
     while word!="":
@@ -63,9 +64,18 @@ def user_input():
 
 
 def remove_duplicates():
-    list3=set(list2)
-    return list3
-list2=[]
+    index1=1
+    index2=1
+    lenght=len(list2)
+    for i in range(lenght-1):
+        if list2[0]==list2[index2]:
+            del list2[index2]
+        print(index2)
+        index2+=1
+
+    return list2
+        
+
 user_input()
 print(remove_duplicates())
         
