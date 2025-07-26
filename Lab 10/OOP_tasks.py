@@ -147,20 +147,17 @@ class Library:
         self.library={}
     
     def add_book(self,book: Book):
-        self.library[book]=(book.title,book.author,book.isbn,book.year)  
-        # self.library.append(book)
+        self.library[book]=(book.title,book.author,book.isbn,book.year)
     
     def __str__(self):
         return f"{self.library}"
     
     def remove_book(self,isbn):
         for book in self.library:
-            if isbn in self.library[book]:
-                del book
-            else:
-                print("Book not in library")
+            if isbn == self.library[book][2]:
+                del self.library[book]
+                break
             
-
     def list_books(self):
         for book in self.library:
             print(book)
@@ -174,20 +171,20 @@ class Library:
 
 
 ### TEST
-book1 = Book("1984", "George Orwell", "123456789", 1949)
-book2 = Book("To Kill a Mockingbird", "Harper Lee", "987654321", 1960)
+
+book1 = Book("To Kill a Mockingbird", "Harper Lee", "987654321", 1960)
+book2 = Book("1984", "George Orwell", "123456789", 1949)
 
 library = Library()
 library.add_book(book1)
 library.add_book(book2)
-print(library)
 
 print("List of books in the library:\n")
 library.list_books()
 
 # Remove a book
 library.remove_book("123456789")
-print("\nList of books after removal:")
+print("\nList of books after removal:\n")
 library.list_books()
 
 # # Find a book
