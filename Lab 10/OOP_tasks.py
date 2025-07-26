@@ -156,13 +156,20 @@ class Library:
         for book in self.library:
             if isbn == self.library[book][2]:
                 del self.library[book]
-                break
+                return
+        print("\nNo such book in this library")
             
     def list_books(self):
         for book in self.library:
             print(book)
             print(25*"-")
 
+    def find_book(self,isbn):
+        for book in self.library:
+            if isbn==self.library[book][2]:
+                print(f"\nBook found!:\n{book}")
+                return
+        print("\nNo such book in this library")
 
     
 
@@ -183,16 +190,13 @@ print("List of books in the library:\n")
 library.list_books()
 
 # Remove a book
-library.remove_book("123456789")
+library.remove_book("2626")
 print("\nList of books after removal:\n")
 library.list_books()
 
-# # Find a book
-# book = library.find_book("987654321")
-# if book:
-#     print(f"\nFound book: {book}")
-# else:
-#     print("\nBook not found.")
+# Find a book
+library.find_book("26262")
+
 
 
 ### EXPECTED OUTPUT:
