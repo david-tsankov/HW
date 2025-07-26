@@ -102,6 +102,19 @@
 
 # YOUR CODE HERE
 
+def user_input():
+    list_numbers=[]
+    while True:
+        number=input("Please enter a number: ")
+        if number=="":
+            break
+        else:
+            number=int(number)
+            list_numbers.append(number)
+    return list_numbers
+print(user_input())
+
+
 
 # --------------------------------- Задача 4. -------------------------------- #
 # Напишете програма на Python, която намира най-дългата последователност от
