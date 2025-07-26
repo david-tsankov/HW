@@ -53,42 +53,42 @@
 #   изход:first; second; third
 
 # YOUR CODE HERE
-list2=[]
-def user_input():
-    word=None
-    while word!="":
-        word=input("Please enter a word: ")
-        list2.append(word)
-    del list2[-1]
-    return list2
 
-def remove_duplicted():
-    list_no_duplicates=[]
-    for i in list2:
-        if i not in list_no_duplicates:
-            list_no_duplicates.append(i)
-    return list_no_duplicates
-
-user_input()
-print(remove_duplicted())
-
-# def remove_duplicates():
-#     index1=1
-#     index2=1
-#     lenght=len(list_comparison)
-#     for i in range(lenght-1):
-#         if list2[0]==list2[index2]:
-#             del list2[index2]
-#         print(index2)
-#         index2+=1
-
+#### METHOD 1:
+# list2=[]
+# def user_input():
+#     word=None
+#     while word!="":
+#         word=input("Please enter a word: ")
+#         list2.append(word)
+#     del list2[-1]
 #     return list2
-        
+
+# def remove_duplicted():
+#     list_no_duplicates=[]
+#     for i in list2:
+#         if i not in list_no_duplicates:
+#             list_no_duplicates.append(i)
+#     return list_no_duplicates
 
 # user_input()
+# print(remove_duplicted())
+        
+#### METHOD 2:
+# list2=[]
+# def user_input():
+#     word=None
+#     while word!="":
+#         word=input("Please enter a word: ")
+#         list2.append(word)
+#     del list2[-1]
+#     return list2
+
+# def remove_duplicates():
+#     dict_no_duplicates=dict.fromkeys(list2)
+#     return list(dict_no_duplicates.keys())
+# user_input()
 # print(remove_duplicates())
-        
-        
 
 # --------------------------------- Задача 3. -------------------------------- #
 # Да се създаде програма, която да чете цели числа въведени от потребителя,
