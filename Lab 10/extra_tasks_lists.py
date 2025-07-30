@@ -22,7 +22,6 @@
 #         list1.append(x)
 #     return list1
 
-
 # def sorting_list():
 #     del list1[-1]
 #     new_list=[]
@@ -102,33 +101,33 @@
 
 # YOUR CODE HERE
 
-def user_input():
-    list_numbers=[]
-    while True:
-        number=input("Please enter a number: ")
-        if number=="":
-            break
-        else:
-            number=int(number)
-            list_numbers.append(number)
-    return list_numbers
+# def user_input():
+#     list_numbers=[]
+#     while True:
+#         number=input("Please enter a number: ")
+#         if number=="":
+#             break
+#         else:
+#             number=int(number)
+#             list_numbers.append(number)
+#     return list_numbers
 
-list_numbers=user_input()
-list_sorted_numbers=[]
+# list_numbers=user_input()
+# list_sorted_numbers=[]
 
-def sorting_numbers():
-    for number in list_numbers:
-        if number<0:
-            list_sorted_numbers.append(number)
-    for number in list_numbers:
-        if number==0:
-            list_sorted_numbers.append(number)
-    for number in list_numbers:
-        if number>0:
-            list_sorted_numbers.append(number)
-    return list_sorted_numbers
+# def sorting_numbers():
+#     for number in list_numbers:
+#         if number<0:
+#             list_sorted_numbers.append(number)
+#     for number in list_numbers:
+#         if number==0:
+#             list_sorted_numbers.append(number)
+#     for number in list_numbers:
+#         if number>0:
+#             list_sorted_numbers.append(number)
+#     return list_sorted_numbers
 
-print(sorting_numbers())
+# print(sorting_numbers())
 
 
 
@@ -143,8 +142,40 @@ print(sorting_numbers())
 
 # YOUR CODE HERE
 
+# def user_input():
+#     list_numbers=[]
+#     while True:
+#         number=input("Please enter a number: ")
+#         if number=="":
+#             break
+#         else:
+#             number=int(number)
+#             list_numbers.append(number)
+#     return list_numbers
 
-# --------------------------------- Задача 5. -------------------------------- #
+# list_numbers=user_input()
+# list_tupples=[]
+
+# def find_longest_series():
+#     index=0
+#     tupple_list_repeats=[]
+#     for i in range(len(list_numbers)+1):
+#         if list_numbers[index]==list_numbers[index+1]:
+#            tupple_list_repeats.append(list_numbers[index]) 
+#            print(tupple_list_repeats)
+#         else:
+#             tupple_list_repeats.append(list_numbers[index])
+#             list_tupples.append(tupple_list_repeats)
+#             print(tupple_list_repeats)
+#             print(list_tupples)
+#             for i in tupple_list_repeats:
+#                 del i
+#         index+=1
+#     return list_tupples
+
+# print(find_longest_series())
+
+# --------------------------------- Задача 5. -------------------------------- #✅
 # Напишете програма, която създава следната квадратна матрица m(n*n), по
 # зададен от потребителя размер (n).
 # Пример:
@@ -162,6 +193,33 @@ print(sorting_numbers())
 #         [4, 8, 12, 16]
 
 # YOUR CODE HERE
+
+# def user_input():
+#     n=int(input("Please enter size of matrix (nxn): "))
+#     return n
+
+# n=user_input()
+
+
+# def matrix_row_constructor():
+#     matrix={}
+#     for i in range(n):
+#         matrix[i]=[]
+#     return matrix
+# matrix=matrix_row_constructor()
+# def matrix_row_filler():
+#     for key in matrix.keys():
+#         for i in range(int(key)+1,n**2+1,n):
+#             matrix[key].append(i)
+#     return matrix
+# matrix=matrix_row_filler()
+# def row_extractor():
+#     for list in matrix.values():
+#         print(list)
+#     return
+        
+# row_extractor()
+
 
 
 # --------------------------------- Задача 6. -------------------------------- #
@@ -183,6 +241,29 @@ print(sorting_numbers())
 
 # YOUR CODE HERE
 
+def user_input():
+    n=int(input("Please enter size of matrix (nxn): "))
+    return n
+n=user_input()
+def matrix_row_constructor():
+    matrix={}
+    for i in range(n):
+        matrix[i]=[]
+    return matrix
+matrix=matrix_row_constructor()
+def matrix_row_filler():
+    for key in matrix.keys():
+        for i in range(n*int(key)+1,(int(key)+1)*n+1,1):
+            matrix[key].append(i)
+    return matrix
+matrix=matrix_row_filler()
+def row_inverter():
+    for key in matrix.keys():
+        if key in range(1,n,2):
+            matrix[key]=matrix[key][::-1]
+    return matrix
+matrix=row_inverter()
+def matrix_transposer():
 
 # --------------------------------- Задача 7. -------------------------------- #
 # Напишете програма, която намира всички последователности от поне два еднакви
